@@ -7,9 +7,9 @@ This repository contains the source code for the website of Marie Blockmans. The
 ## Project Structure
 
 - `index.html` : The homepage of the site.
-- `about.html` : A page describing Marie and her background.
-- `portfolio.html` : A gallery of projects completed by Marie.
-- `contact.html` : A contact page to get in touch with Marie.
+- `avant-apres.html` : A page showcasing before and after results of skincare treatments provided by Marie.
+- `services.html` : A detailed description of the services offered by Marie, including her specialties and techniques.
+- `faq.html` : A frequently asked questions (FAQ) page providing answers to common inquiries and offering a way to contact Marie for further questions.
 - `css/` : Directory containing CSS stylesheets.
 - `images/` : Directory containing images used on the site.
 
