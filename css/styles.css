@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #a-propos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .portrait {
+        width: 150px;
+    }
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    background: linear-gradient(45deg, #DED0B6, #FAEED1);
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap: 10px;
+} 
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+}
+
+body {
+    background-color: #FDF7E4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#a-propos {
+    background-color: #FAEED1;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.about {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portrait {
+    max-width: 300px;
+}
+
+.titrebio {
+    margin-bottom: 20px;
+}
+
+.bio {
+    text-align: justify;
+    hyphens:none; /* Ajoute la césure automatique*/ 
+}
+
+.biordv {
+    margin-top: auto;
+}
+
+@media (max-width: 600px) { 
+    .bio {
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) { 
+    .fancy {
+        margin-top: 50px;
+    }
+}
+
+#accueil {
+    background-image: url(/images/bannermarie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+    margin-top: auto;
+   }
+   
+   .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #BBAB8C;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #BBAB8C;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #BBAB8C;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy:hover {
+    color: white;
+    background: #BBAB8C;
+   }
+   
+   .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .fancy:hover .bottom-key-1,
+    .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+
+.hero {
+    max-width: 100%;
+}
+
+#services {
+    background: linear-gradient(45deg, #BBAB8C, #DED0B6);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.titreser {
+    width: 100%;
+}
+
+#avant-apres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.titre-gallery {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-gallery {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
