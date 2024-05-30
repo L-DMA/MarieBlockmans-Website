@@ -16,8 +16,8 @@
         <nav>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#a-propos">À Propos</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#a-propos">À propos</a></li>
                 <li><a href="#avant-apres">Avant et Après</a></li>
                 <!-- <li><a href="#temoignages">Témoignages</a></li>
                 <li><a href="#blog">Blog</a></li> --> 
@@ -35,12 +35,36 @@
             <img src="images/bannermarie.jpg" alt="Banniere Marie Blockmans">
         </section>
 
+        <section id="services">
+            <h2 class="titreser">Services</h2>
+            <div class="service">
+                <img src="images/arche1.png" alt="arche soins visage">
+                <h3>Soins visage</h3>
+                <p></p>
+            </div>
+            <div class="service">
+                <img src="images/arche2.png" alt="arche cheveux">
+                <h3>Cheveux</h3>
+                <p></p>
+            </div>
+            <div class="service">
+                <img src="images/arche3.png" alt="arche minceur">
+                <h3>Minceur</h3>
+                <p></p>
+            </div>
+            <div class="service">
+                <img src="images/arche4.png" alt="arche détatouage">
+                <h3>Détatouage</h3>
+                <p></p>
+            </div>
+        </section>
+
         <section id="a-propos">
             <div class="portrait">    
                 <img src="/images/portrait.jpg" alt="Portrait Marie">
             </div>
             <div class="about">
-                <h2 class="titrebio">À Propos</h2>
+                <h2 class="titrebio">À propos</h2>
                 <p class="bio">Bienvenue dans mon univers, je suis Marie Blockmans, votre experte indépendante en soin de la peau. <br>
                     Avec une approche entièrement personnalisée et une sélection de produits de haute qualité,
                     je m’engage à révéler l’éclat naturel de votre peau. <br> J’utilise également des machines de pointe, 
@@ -56,52 +80,10 @@
             </div>
         </section>
 
-        <section id="services">
-            <h2 class="titreser">Services</h2>
-             <div class="service">
-                <h3>MicroNeedling</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>BB Botox</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>Pousse des cheveux</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>Peeling aux acides</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>Peeling au charbon</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>Soins Combinés</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>EMS</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>Cryo Lipolise</h3>
-                <p></p>
-            </div>
-            <div class="service">
-                <h3>Détatouage</h3>
-                <p></p>
-            </div>
-
-        </section>
-
         <section id="avant-apres">
             <div class="text-gallery">
                 <h2 class="titre-gallery">Avant et Après</h2>
                 <p>Découvrez les résultats des traitements avec notre galerie de photos avant/après.</p>
-                Galerie de photos
             </div>
             <div class="gallery">
                 <div class="gallery-item">
@@ -129,18 +111,42 @@
             <h2>Blog</h2>
             <p>Conseils pour maintenir une peau saine, nouveautés et plus encore.</p>
              Articles de blog
-        </section> 
+        </section> -->
 
         <section id="rendez-vous">
             <h2>Prendre Rendez-vous</h2>
-            <form action="#" method="post">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
+            <form class="form">
+                <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>prénom</span>
+                    </label>
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>nom</span>
+                    </label>
+                </div>  
+                    
+                <label>
+                    <input required="" placeholder="" type="email" class="input">
+                    <span>email</span>
+                </label>
+                
+                <label>
+                    <input required="" type="tel" placeholder="" class="input">
+                    <span>numéro de téléphone</span>
+                </label>
+                <label>
+                    <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                    <span>message</span>
+                </label>
+            
+                <button class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Envoyer</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+                </button>
             </form>
         </section>
 
@@ -151,20 +157,20 @@
         </section> -->
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Adresse : 123 Rue Exemple, Ville, Pays</p>
-            <p>Téléphone : 01 23 45 67 89</p>
-            <p>Email : contact@marieblockmans.com</p>
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-text">Adresse : 123 Rue Exemple, Ville, Pays</p>
+            <p class="contact-text">Email : contact@marieblockmans.com</p>
+            <p class="contact-text">Téléphone : 01 23 45 67 89</p>
+            <div class="social-media">
+                <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+                <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+                <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Louca Di Marcoberardino. Tous droits réservés.</p>
-        <div class="social-media">
-            <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
-            <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
-            <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
-        </div>
     </footer>
 </body>
 </html>
