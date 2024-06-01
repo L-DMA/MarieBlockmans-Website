@@ -168,7 +168,9 @@ nav {
 }
 
 body {
-    background: linear-gradient( 45deg, #776B5D, #EBE3D5)
+    background: linear-gradient( 45deg, #776B5D, #EBE3D5);
+    overscroll-behavior-y: none;
+
 }
 
 h2 {
